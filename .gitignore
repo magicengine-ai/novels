@@ -3,3 +3,5 @@
 .update.log
 .cron.log
 .update-request.txt
+.trigger.log
+.auto-update.log

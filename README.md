@@ -27,6 +27,7 @@
 - [第四章 镜中人](./chapter-04-mirror-person.md)
 - [第五章 七天](./chapter-05-seven-days.md)
 - [第六章 第一个候选人](./chapter-06-first-candidate.md)
+- [第七章 画家的选择](./chapter-07-painter-choice.md)
 
 ---
 
