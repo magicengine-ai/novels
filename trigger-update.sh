@@ -43,17 +43,25 @@ fi
 log "发送触发消息到群聊..."
 
 # 使用 openclaw message 发送
-openclaw message send \
+/home/jason/.npm-global/bin/openclaw message send \
   --channel feishu \
   --target "chat:$GROUP_CHAT_ID" \
   --message "🔔 小说自动更新检查
 
-距离上次更新已超过 30 分钟，请检查并续写《静安寺路的第十三级台阶》下一章。
+距离上次更新已超过 5 分钟，请检查并续写《静安寺路的第十三级台阶》下一章。
 
 当前状态：
 - 最新章节：$(grep -o '"latestChapter"[^,]*' "$STATE_FILE" | cut -d'"' -f4)
 - 总字数：$(grep -o '"totalWords"[^,]*' "$STATE_FILE" | grep -o '[0-9]*')
 - 下次更新：$(grep -o '"nextChapterDue"[^,]*' "$STATE_FILE" | cut -d'"' -f4)
+
+请开始工作！📝" \
+  2>&1 | tee -a "$LOG_FILE"
+
+log "触发消息已发送"
+log "=== 完成 ==="
+log ""
+)
 
 请开始工作！📝" \
   2>&1 | tee -a "$LOG_FILE"
