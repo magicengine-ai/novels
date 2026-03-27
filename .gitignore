@@ -1,0 +1,5 @@
+# 本地状态文件（不提交到 Git）
+.update-state.json
+.update.log
+.cron.log
+.update-request.txt
