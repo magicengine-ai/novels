@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# 上海恐怖小说 - 自动更新触发器
+# 《最后的人类》- 自动更新触发器
 # 通过发送飞书消息到群聊，触发 AI 检查并更新小说
 
-NOVEL_DIR="/home/jason/.openclaw/workspace-creator/novels/shanghai-horror"
+NOVEL_DIR="/home/jason/.openclaw/workspace-creator/novels/novel-01"
 STATE_FILE="$NOVEL_DIR/.update-state.json"
 LOG_FILE="$NOVEL_DIR/.trigger.log"
 GROUP_CHAT_ID="oc_dcf59834784e60c1ca436f72f13e37fb"
@@ -48,7 +48,7 @@ log "发送触发消息到群聊..."
   --target "chat:$GROUP_CHAT_ID" \
   --message "🔔 小说自动更新检查
 
-距离上次更新已超过 5 分钟，请检查并续写《静安寺路的第十三级台阶》下一章。
+距离上次更新已超过 5 分钟，请检查并续写《最后的人类》下一章。
 
 当前状态：
 - 最新章节：$(grep -o '"latestChapter"[^,]*' "$STATE_FILE" | cut -d'"' -f4)
