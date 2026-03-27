@@ -25,11 +25,11 @@ if [ -f "$STATE_FILE" ]; then
         
         log "距离上次更新：${DIFF} 分钟"
         
-        if [ $DIFF -ge 30 ]; then
+        if [ $DIFF -ge 5 ]; then
             NEED_UPDATE=true
-            log "超过 30 分钟，触发更新"
+            log "超过 5 分钟，触发更新"
         else
-            log "不足 30 分钟，跳过"
+            log "不足 5 分钟，跳过"
             exit 0
         fi
     fi
