@@ -1,0 +1,11 @@
+# 本地状态文件（每个小说目录单独管理）
+**/.update-state.json
+**/.update.log
+**/.cron.log
+**/.trigger.log
+**/.update-request.txt
+**/.auto-update.log
+
+# 临时文件
+*.log
+*.tmp
