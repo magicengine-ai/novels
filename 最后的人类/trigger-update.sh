@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# 《最后的人类》- 自动更新触发器 v5
-# 发送消息到群聊，触发 AI 使用 subagent 创作
+# 《最后的人类》- 自动更新触发器 v6
+# 发送消息到群聊，触发 AI 创作新章节
 
-NOVEL_DIR="/home/jason/.openclaw/workspace-creator/novels/novel-01"
+NOVEL_DIR="/home/jason/.openclaw/workspace-creator/novels/最后的人类"
 STATE_FILE="$NOVEL_DIR/.update-state.json"
 LOG_FILE="$NOVEL_DIR/.trigger.log"
 GROUP_CHAT_ID="oc_dcf59834784e60c1ca436f72f13e37fb"
@@ -65,7 +65,7 @@ log "发送触发消息到群聊..."
 1. 字数：4000-5000 字
 2. 保持硬科幻风格
 3. 延续上一章剧情
-4. 保存文件到 novels/novel-01/
+4. 保存文件到 novels/最后的人类/
 5. 更新 .update-state.json 和 README.md
 6. 提交 git commit
 
