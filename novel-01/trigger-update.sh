@@ -49,7 +49,7 @@ log "最新章节：$LATEST_CHAPTER (第$LATEST_NUM 章)"
 log "发送触发消息到群聊..."
 
 # 发送飞书消息到群聊
-openclaw message send \
+/home/jason/.npm-global/bin/openclaw message send \
   --channel feishu \
   --target "chat:$GROUP_CHAT_ID" \
   --message "🔔 **小说自动更新触发 - 第 $NEXT_NUM 章**
